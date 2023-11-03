@@ -1,0 +1,85 @@
+.Card_default_position{
+    background-color: #ECFDF1;
+  align-self: center;
+  width: 30rem;
+  height: 30rem;
+  border: 1px solid black;
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  transition: 1s;
+}
+.Card_default_position:hover::before{
+    width: 0px;
+    background: #ffffff;
+}
+.Card_default_position:hover {
+    background: #9bdfec;
+    transform: scale(1.2);
+}
+.Card_default_position:hover .CardImg{
+    
+    transform: scale(1.2);
+    transition: transform 1.5s ease;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  }
+.CardImg{
+    float: left;
+    width:  7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-size: cover;
+    display: block;
+    border: 1px solid black ;
+    background-color: #fff59e;;
+}
+.Cardtxt{
+    text-align: center;
+}
+
+@media only screen and (max-width: 1080px) {
+    .Card_default_position {
+        width: 23rem;
+        height: 30rem;
+    }
+    .CardImg {
+        width: 4rem;
+        height: 4rem;
+    }
+    .Cardtxt{
+        text-align: center;
+        font-size: 27px;
+    }
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 480px) {
+    .Card_default_position {
+        width: 16rem;
+        height: 14rem;
+    }
+    .CardImg {
+        width: 4rem;
+        height: 4rem;
+    }
+    .Cardtxt{
+        text-align: center;
+        font-size: 12px;
+    }
+}

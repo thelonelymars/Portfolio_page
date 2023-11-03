@@ -1,0 +1,16 @@
+.CardSection{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    justify-content: center;
+    align-items:center;
+    background-color: #ffcaaa;
+}
+@media screen and (max-width: 1080px) {
+    .CardSection {
+      flex-direction: column;
+      align-items: stretch;
+    }}
