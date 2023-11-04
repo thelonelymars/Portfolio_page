@@ -1,29 +1,18 @@
-import  { useEffect} from "react";
-import axios from "axios";
 import Header from "./Header";
-import Slideshow from "./Slideshow";
 import CardSection from "./CardSection";
 import Footer from "./Footer";
+import { Suspense, lazy } from 'react';
+const Slideshow = lazy(() => import('./Slideshow'));
 import './App.css'
 function App() {
 
   
-
-  useEffect(() => {
-    // Make an HTTP GET request to your Gin server's /api/hello endpoint
-    axios.get("http://localhost:8080")
-      .then(() => {
-        
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
-  }, []);
-
   return (
     <div className="App">
       <Header/>
-      <Slideshow/>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Slideshow/>
+      </Suspense>
       <CardSection/>
       <Footer/>
     </div>
