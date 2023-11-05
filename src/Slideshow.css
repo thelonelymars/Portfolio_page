@@ -39,6 +39,7 @@
     justify-content: center;
     flex-direction: column;
     column-gap: 5px;
+    margin-left: 7rem;
 }
 .Description_Projects{
     font-family: 'Quicksand', sans-serif;
@@ -61,4 +62,11 @@
         margin-left: 20px;
         width: 90%;
     }
+    .Text_slideshow{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      column-gap: 5px;
+      margin-left: 0rem;
+  }
 }
