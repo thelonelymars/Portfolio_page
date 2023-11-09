@@ -1,0 +1,1 @@
+import{j as e}from"./index-456d3c56.js";const o=()=>e.jsxs("div",{children:[e.jsx("h1",{children:"Contact Me"}),e.jsx("p",{children:"Feel free to reach out to me at example@example.com"})]});export{o as default};
